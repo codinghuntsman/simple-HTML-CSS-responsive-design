@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.row {
+  display: flex;
+  justify-content: center;
+  margin-top: 5vw;
+}
+.header-content {
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+}
+.header-content h1 {
+  font-size: 5.2vw;
+}
+.header-content h4 {
+  width: 45vw;
+  font-size: 2vw;
+  padding-bottom: 20px;
+}
+a {
+  text-decoration: none;
+}
+.header-content .btn {
+  display: flex;
+  justify-content: center;
+}
+.header-content .btn a {
+  padding: 2.5% 10%;
+  border-radius: 5px;
+  color: white;
+  font-size: 2vw;
+  background-color: #fd7158;
+}
+
+/* Image section */
+.image-section {
+  width: 50vw;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
+.left-section img {
+  width: 20vw;
+}
+.left-section .doctor_one {
+  position: absolute;
+  width: 23vw;
+  z-index: 1;
+  top: 1.5vw;
+  left: -0.9vw;
+}
+.right-section img {
+  width: 20vw;
+}
+.right-section .doctor_two {
+  position: absolute;
+  width: 25vw;
+  z-index: 1;
+  right: 2vw;
+}
+/*---------------------Responsiveness----------------- */
+@media only screen and (max-width: 600px) {
+  .left-section .doctor_one {
+    top: 9px;
+  }
+  .right-section .doctor_two {
+    top: -4.1vw;
+  }
+}
+@media only screen and (min-width: 601px) and (min-width: 768px) {
+  .left-section .doctor_one {
+    top: 1.8vw;
+  }
+  .right-section .doctor_two {
+    /* top: -4.6vw; */
+    top: -36px;
+  }
+}
+@media only screen and (min-width: 769px) and (min-width: 1024px) {
+  .left-section .doctor_one {
+    top: 1.6vw;
+  }
+  .right-section .doctor_two {
+    top: -49px;
+  }
+}
+@media only screen and (min-width: 1025px) and (min-width: 1200px) {
+  .left-section .doctor_one {
+    top: 22px;
+  }
+  .right-section .doctor_two {
+    top: -70px;
+  }
+}
